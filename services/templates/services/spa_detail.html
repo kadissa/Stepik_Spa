@@ -1,0 +1,46 @@
+{% extends 'services/base.html' %}
+{% load static %}
+{% block title %}{{ spa.title }}{% endblock %}
+
+{% block header %}
+    {% include 'services/block/header.html' %}
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <nav aria-label="breadcrumb" class="mt-4">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item active" aria-current="page"><h1>
+                            {{ spa.title }}</h1></li>
+                    </ol>
+                </nav>
+                <img class="img-fluid rounded " src="{{ spa.image.url }}" alt="NON">
+                <hr>
+                <p class="lead">
+                    {{ spa.body|striptags }}
+                </p>
+                <hr>
+                <div><i>Продолжительность:</i>
+                    <i class="invisible">__________________________________________________</i>
+                    <p class="text-right d-inline"> {{ spa.length }} минут</p>
+
+                </div>
+
+                <hr>
+                <div>
+                    <i>Цена: </i>
+                    <i
+                            class="invisible">______________________________________________________________
+                    </i>
+                    <p class="text-right d-inline"> {{ spa.price }} рублей</p>
+                </div>
+
+                <hr>
+                {% include 'services/block/comments.html' %}
+            </div>
+            {% include 'services/block/aside.html' %}
+        </div>
+    </div>
+{% endblock %}

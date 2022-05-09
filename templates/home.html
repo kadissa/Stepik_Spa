@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block title %}{% endblock %}
+{% block content %}
+    {% if user.is_authenticated %}
+    <h1> hi {{ user.username }}</h1>
+        <p><a href="{% url 'logout' %}">Выйти</a></p>
+        {% else %}
+        <h3>Необходимо <a href="{% url 'login' %}">авторизоваться</a>. Но программы можно
+            смотреть и так )</h3>
+    {% endif %}
+<ul>{% for spa_prog in spa_progs %}
+<li>{{ spa_prog.title }}</li>
+<li>{{ spa_prog.price }}</li>
+<li>{{ spa_prog.length }}</li>
+{% endfor %}
+
+    <a href="../services/templates/services/base.html">Главная</a>
+
+
+</ul>
+
+{% endblock %}

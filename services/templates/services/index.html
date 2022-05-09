@@ -1,0 +1,561 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Blossom-spa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Responsive Minimal Salon Website Template">
+    <meta name="keywords"
+          content="gallery,massage,spa">
+    <meta name="author" content="">
+
+    <link rel="shortcut icon" href="{% static 'services/img/logo.png' %}" type="image/x-icon">
+
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <![endif]-->
+
+
+    <!-- CSS Files
+    ================================================== -->
+    {#    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">#}
+    {#    <link rel="stylesheet" href="css/jpreloader.css" type="text/css">#}
+    {#    <link rel="stylesheet" href="css/animate.css" type="text/css">#}
+    {#    <link rel="stylesheet" href="css/plugin.css" type="text/css">#}
+    {#    <link rel="stylesheet" href="css/owl.carousel.css" type="text/css">#}
+    {#    <link rel="stylesheet" href="css/owl.theme.css" type="text/css">#}
+    {#    <link rel="stylesheet" href="css/owl.transitions.css" type="text/css">#}
+    {#    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">#}
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <!-- custom background -->
+    <link rel="stylesheet" href="{% static 'services/css/bg.css' %}" type="text/css">
+
+    <!-- color scheme -->
+    <link rel="stylesheet" href="{% static 'services/css/color.css' %}" type="text/css" id="colors">
+
+    <!-- load fonts -->
+    <link rel="stylesheet" href="
+{% static 'services/css/fonts/font-awesome/css/font-awesome.css' %}"
+          type="text/css">
+    <link rel="stylesheet" href="{% static 'services/css/fonts/elegant_font/HTML_CSS/style.css' %}"
+          type="text/css">
+    <link rel="stylesheet" href="{% static 'services/css/fonts/et-line-font/style.css' %}"
+          type="text/css">
+
+    <!-- revolution slider -->
+    <link rel="stylesheet" href="rs-plugin/css/settings.css" type="text/css">
+    <link rel="stylesheet" href="css/rev-settings.css" type="text/css">
+</head>
+
+<body id="homepage">
+
+<div id="wrapper">
+
+    <!-- header begin -->
+    <header class="header_center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- logo begin -->
+                    <div id="logo">
+                        <a href="index.html">
+                            <img class="logo logo_dark_bg" src="
+{% static 'services/img/logo.png' %}"
+                                 alt="">
+                            <img class="logo logo_light_bg" src="{% static 'services/img/logo.png' %}" alt="">
+                        </a>
+                    </div>
+                    <!-- logo close -->
+
+                    <!-- small button begin -->
+                    <span id="menu-btn"></span>
+                    <!-- small button close -->
+
+                    <!-- mainmenu begin -->
+
+                    <nav>
+                        <ul id="mainmenu">
+                            <li><a href="index.html">Blossom-spa</a></li>
+                            <li><a href="massage.html">Массаж</a>
+
+                            </li>
+                            <li><a href="spa-list-description.html">Спа программы</a>
+                                <!--                                <ul>-->
+                                <!--                                    <li><a href="spa-list-description.html">Спа программы(вариант-1)</a></li>-->
+                                <!--                                    <li><a href="spa_list.html">Спа программы(вариант-2)</a></li>-->
+                                <!--                                </ul>-->
+                            </li>
+                            <li><a href="spa.html">О нас</a></li>
+                            <li><a href="index-spa-1.html">Спа-девичник</a></li>
+                            <li><a href="gallery.html">Галерея</a></li>
+                            <li><a href="contact.html">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <!-- mainmenu close -->
+
+                    <div class="clearfix"></div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <!-- header close -->
+
+
+    <!-- content begin -->
+    <div id="content" class="no-bottom no-top">
+
+
+        <!-- revolution slider begin -->
+        <section id="section-slider" aria-label="section-slider" class="fullwidthbanner-container">
+            <div id="revolution-slider">
+                <ul>
+                    <li data-transition="parallaxtoright" data-slotamount="10"
+                        data-masterspeed="1200" data-thumb="">
+                        <!--  BACKGROUND IMAGE -->
+                        <img src="images-slider/main-1920*1704.jpeg" alt=""/>
+
+
+                        <div class="tp-caption ultra-big-yellow sfb"
+                             data-x="center"
+                             data-y="190"
+                             data-speed="1200"
+                             data-start="600"
+                             data-easing="easeInOutExpo"
+                             data-endspeed="400">
+                            <div class="text-center">В наших руках</div>
+                            <div>гармония вашей души</div>
+                        </div>
+
+                    </li>
+
+                    <li data-transition="parallaxtoright" data-slotamount="10"
+                        data-masterspeed="800" data-thumb="">
+                        <!--  BACKGROUND IMAGE -->
+                        <img src="images-slider/wide8.jpg" alt=""/>
+
+                        <div class="tp-caption big-white sfb"
+                             data-x="center"
+                             data-y="260"
+                             data-speed="1000"
+                             data-start="800"
+                             data-easing="easeInOutExpo"
+                             data-endspeed="450">
+                            Почувствуйте спа-процедуры вместе с нами
+                        </div>
+
+                        <div class="tp-caption ultra-big-white sfb"
+                             data-x="center"
+                             data-y="190"
+                             data-speed="1200"
+                             data-start="600"
+                             data-easing="easeInOutExpo"
+                             data-endspeed="400">
+                            Расслабь свой разум
+                        </div>
+
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+        <!-- revolution slider close -->
+
+        <div class="no-padding mt-130 height90px mobile-hide absolute z-index500 width100 text-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="overlay10">
+
+                            <div class="row-fluid">
+                                <div class="col-md-4">
+                                    <div class="info-box padding20">
+                                        <i class="icon_clock_alt id-color"></i>
+                                        <div class="info-box_text">
+                                            <div class="info-box_title">Время работы</div>
+                                            <div class="info-box_subtite">Понедельник-Воскресенье:
+                                                10:00 - 21:00
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="info-box padding20">
+                                        <i class="icon_house_alt id-color"></i>
+                                        <div class="info-box_text">
+                                            <div class="info-box_title">Мы находимся</div>
+                                            <div class="info-box_subtite">г.Сочи ул. Кубанская 15
+                                                (12-й этаж)
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="info-box padding20">
+                                        <i class="icon_calendar id-color"></i>
+                                        <div class="info-box_text">
+                                            <div class="info-box_title">Записаться</div>
+                                            <div class="info-box_subtite">+7 (928) 454-80-89</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- section begin -->
+        <section id="section-top-reason" class="no-top no-bottom">
+            <div class="container-fluid">
+                <div class="row-fluid display-table">
+
+                    <div class="col-md-6 text-middle" data-bgcolor="#e2e2e2">
+                        <div class="padding40">
+                            <div class="box-icon">
+                                <i class="fa fa-tags wow zoomIn" data-wow-delay=".25s"></i>
+                                <div class="text">
+                                    <h4>Специальное предложение для знакомства с нашей СПА студией.
+                                        Предлагаем начать
+                                        наше знакомство с Релакс-комплекса для тела и души.</h4>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <ul class="lst">
+                                        <li class="lst"><h4>Распаривание в кедровой фитобочке с
+                                            травами</h4></li>
+                                        <li class="lst"><h4>Ароматное скрабирование тела (кокос,
+                                            шоколад, манго) — скраб
+                                            на
+                                            выбор</h4>
+                                        </li>
+                                        <li class="lst"><h4>Общий оздоровительный массаж тела</h4>
+                                        </li>
+                                        <li><h4>В подарок Вы получите приятный бонус — скульптурный
+                                            массаж лица </h4></li>
+                                        <li><h4>В завершение процедур мы проведем для Вас чайную
+                                            церемонию в
+                                            расслабляющей атмосфере </h4>
+                                        </li>
+                                    </ul>
+                                    <em>Продолжительность программы — 180 мин
+                                        Стоимость программы — 4500 руб</em>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 text-middle text-center"
+                         data-bgimage="url(images/background/image-12-800*800.jpg)">
+                        <!--                                                <div class="padding40">-->
+                        <!--                                                    <span>Relax Your Mind</span>-->
+                        <div class="tp-caption big-white sfb"
+                             data-x="center"
+                             data-y="190"
+                             data-speed="1200"
+                             data-start="600"
+                             data-easing="easeInOutExpo"
+                             data-endspeed="400">
+                            Relax Your Mind
+                        </div>
+                        <!-- Кнопка play  -->
+                        <div class="spacer-double"></div>
+                        <a href="images/video/VID-20220329-WA0015.mp4"
+                           class="popup-youtube play-button large"></a>
+                        <div class="spacer-single"></div>
+                        <!--                                            </div>-->
+                        <!-- end of play button-->
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+        <!-- section close -->
+
+        <!-- section our services begin -->
+        <section id="section-services-tab" aria-label="section-services-tab">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 col-xs-6 text-center">
+                        <div class="picframe">
+                            <a href="massage.html">
+                                    <span class="overlay img-circle">
+                                        <span class="pf_text">
+                                            <span class="project-name">Массаж</span>
+                                        </span>
+                                    </span>
+                            </a>
+
+                            <img src="images/services/back_massage.jpg" alt="" class="img-circle"/>
+                        </div>
+
+                        <div class="spacer-single"></div>
+                        <!--                        <a href="massage.html"><h3>Массаж</h3></a>-->
+                        <b>Восемь видов массажа: общеоздоровительный,
+                            моделирующий,
+                            скульптурный...</b>
+                        <div class="spacer-half"></div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-6 text-center">
+                        <div class="picframe">
+                            <a href="spa-list-description.html">
+                                    <span class="overlay img-circle">
+                                        <span class="pf_text">
+                                            <span class="project-name">СПА программы</span>
+                                        </span>
+                                    </span>
+                            </a>
+
+                            <img src="images/services/barrel.jpg" alt="" class="img-circle"/>
+                        </div>
+                        <div class="spacer-single"></div>
+                        <!--                        <a href="spa-list-description.html"><h3>Спа-программы</h3></a>-->
+                        <b>Десять комплексных СПА программ
+                            с кедровой фитобочкой</b>
+                        <div class="spacer-half"></div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-6 text-center">
+                        <div class="picframe">
+                            <a href="index-spa-1.html">
+                                    <span class="overlay img-circle">
+                                        <span class="pf_text">
+                                            <span class="project-name">СПА-девичники</span>
+                                        </span>
+                                    </span>
+                            </a>
+
+                            <img src="images/services/spa-devichniki.jpg" alt=""
+                                 class="img-circle"/>
+                        </div>
+                        <div class="spacer-single"></div>
+                        <!--                        <a href="index-spa-1.html"><h3>Спа-девичники</h3></a>-->
+                        <b>СПА-девичники. Выгодные цены, весёлое времяпрепровождение. </b>
+                        <div class="spacer-half"></div>
+                    </div>
+
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </section>
+        <!-- section close -->
+
+        <section id="section-hero-3" aria-label="section-hero-2" data-stellar-background-ratio=".2"
+                 data-bgcolor="#333"
+                 class="text-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 mt60 mb100 text-center">
+                        <h4 class="mb30">Погрузись в блаженство.</h4>
+                        <div class="small-border wow zoomIn"></div>
+                        <div class="type-wrap font48 text-center">
+                            <!--                        Мы предоставляем-->
+                            <div class="typed-strings">
+                                <p>Уютная атмосфера</p>
+                                <p>Расслабляющий массаж</p>
+                                <p>Спа-процедуры</p>
+                                <p>Чайная церемония</p>
+                            </div>
+                            <span class="typed"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- section  отзывы begin -->
+        <section id="explore-5" class="side-bg text-light">
+            <div class="col-md-6 image-container">
+                <div class="background-image"></div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5 col-md-offset-7">
+
+                        <h2 class="wow-fadeIn">Отзывы</h2>
+                        <ul class="testimonial-list wow fadeIn" data-wow-delay=".25s">
+                            <li>Девочки, спасибо за качественные услуги. В Вашем салоне впервые.
+                                Очень все понравилось.
+                                Теперь ждите в гости каждый месяц. Вы меня полностью восстановили и
+                                подарили легкость во
+                                всем теле и душе! Спасибо ОГРОМНОЕ! Вы Богини своего дела!
+                                <!--                                <span>Армине, клиент</span>-->
+                            </li>
+                            <li>Очень понравилось. Наконец-то использовала сертификат, что подарили
+                                мне на 8
+                                марта. Порадовала себя минеральным обертыванием на косметике
+                                Thalion.
+                                Целый час настоящего покоя и блаженства под приятную музыку в
+                                комфорте. Кожа и тело
+                                отдохнули, аж почувствовала, как эти минералы прямо взбодрили.
+                                <!--                                <span>Сара, клиент</span>-->
+                            </li>
+                        </ul>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+        <!-- section close -->
+
+    </div>
+
+
+    <!--    section before footer-->
+    <section id="cta" aria-label="cta"
+             class="call-to-action bg-color-2 wow fadeInLeftBig text-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 mt10 mt40">
+                    <h3><i class="fa fa-phone mr10"></i>Свяжитесь с нами сейчас и получите
+                        специальные предложения!
+                    </h3>
+                </div>
+
+                <div class="col-md-3 text-right">
+                    <a title="Whatsapp"
+                       href="whatsapp://send?phone=79284548089"><img
+                            src="images/whatsapp_bg-128px.png"
+                            alt="Записаться"/></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section close -->
+
+
+</div>
+
+<!-- footer begin -->
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+
+
+            <div class="col-md-6">
+                <div class="widget">
+                    <h3 class="text-center">Мы открыты</h3>
+                    <div class="box-border double">
+                        <ul class="list-border-bottom">
+                            <li>
+                                <span class="pull-left">Мы работаем </span>
+                                <span class="pull-right id-color"></span>
+                                <div class="clearfix"></div>
+                            </li>
+                            <li>
+                                <span class="pull-left"> Понедельник - Воскресенье </span>
+                                <span class="pull-right id-color">с 10.00 до 21.00</span>
+                                <div class="clearfix"></div>
+                            </li>
+                            <li>
+                                <span class="pull-left">без выходных</span>
+                                <span class="pull-right id-color"></span>
+                                <div class="clearfix"></div>
+                            </li>
+
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="widget widget-post">
+
+                    <h3 class="text-center">Наши контакты</h3>
+                    <div class="box-border">
+                        <address>
+                            <span>г. Сочи ул. Кубанская 15 (12-й этаж)</span>
+                            <span><strong>Тел.:</strong>+7 (928) 454-80-89</span>
+                            <span><strong>Email:</strong><a
+                                    href="mailto:blossom@blossom-spa.ru">blossom@blossom-spa.ru</a></span>
+                            <span><strong>Web:</strong><a href="#">http://blossom-spa.ru</a></span>
+                        </address>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="subfooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    &copy; Copyright 2016 - Modis by Designesia
+                </div>
+                <div class="col-md-6 text-right">
+                    <div class="social-icons">
+                        <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
+                        <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
+                        <a href="#"><i class="fa fa-rss fa-lg"></i></a>
+                        <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
+                        <a href="#"><i class="fa fa-skype fa-lg"></i></a>
+                        <a href="#"><i class="fa fa-dribbble fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+<!-- footer close -->
+
+</div>
+
+
+<!-- Javascript Files
+================================================== -->
+<script src="js/jquery.min.js"></script>
+<script src="js/jpreLoader.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.isotope.min.js"></script>
+<script src="js/easing.js"></script>
+<script src="js/jquery.flexslider-min.js"></script>
+<script src="js/jquery.scrollto.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/jquery.countTo.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/video.resize.js"></script>
+<script src="js/validation.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/enquire.min.js"></script>
+<script src="js/jquery.stellar.min.js"></script>
+<script src="js/designesia.js"></script>
+
+<!-- SLIDER REVOLUTION SCRIPTS  -->
+<script type="text/javascript" src="rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+<script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+
+<!-- current page only scripts -->
+<script src="js/typed.js"></script>
+<script src="js/typed-custom.js"></script>
+
+
+</body>
+</html>

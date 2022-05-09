@@ -1,0 +1,27 @@
+{% extends 'services/base.html' %}
+{% load static %}
+{% block title %}Массаж{% endblock %}
+{% block content %}
+    <div class="container">
+        <div class="row">
+            {% for massage in massage_list %}
+                <div class="col-md-4">
+                    <div class="card border-0">
+                        <a href="{% url 'massage_detail' slug=massage.slug %}">
+                            <img class="card-img-top" src="{{ massage.image.url }}" alt="NON">
+                        </a>
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h1>{{ massage.title }}</h1>
+                            </div>
+                            <div class="card-text">
+                                <p>{{ massage.content|striptags|linebreaks }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+
+        </div>
+    </div>
+{% endblock %}

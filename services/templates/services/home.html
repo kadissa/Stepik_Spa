@@ -1,0 +1,58 @@
+{% extends 'services/base.html' %}
+{% load static %}
+{% block title %}Главная страница{% endblock %}
+
+{% block header %}
+{% include 'services/block/slider.html' %}
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        {% for spa in page_obj %}
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+            <div class="card border-0">
+                <a href="{% url 'spa_detail' spa.slag %}"><img src="media/{{ spa.image }}"
+                                                             alt="barrel"
+                        class="card-img-top"></a>
+                <div class="card-body">
+                    <h1 class="card-title">{{ spa.title }}</h1>
+                    <h2>{{ spa.slag }}</h2>
+                    <div class="card-text">
+                        <p>{{ spa.body|linebreaksbr }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+</div>
+{% endblock %}
+
+{% block pagination %}
+<nav aria-label="Paginate me">
+    <ul class="pagination justify-content-center align-content-end">
+        {% if page_obj.has_previous %}
+            <a href="?page={{ page_obj.previous_page_number }}" class="pageLink"
+               tabindex="-1">Предыдущая</a>
+            {% else %}
+            <li class="page-item disabled text-hide">
+                <a class="pageLink" href="#" tabindex="-1">Предыдущая</a>
+            </li>
+        {% endif %}
+{% for i in page_obj.paginator.page_range %}
+{% if i == page_obj.number %}
+<li class="page-item active ml-2 mr-2"><a href="?page={{ i }}" class="page-link">{{ i }}</a></li>
+{% endif %}
+{% endfor %}
+
+    {% if page_obj.has_next %}
+        <a href="?page={{ page_obj.next_page_number }}" class="pageLink" tabindex="+1">Следующая</a>
+        {% else %}
+        <li class="page-item disabled text-hide"><a class="pageLink" href="#">Следующая</a></li>
+    {% endif %}
+
+    </ul>
+</nav>
+{% endblock %}
